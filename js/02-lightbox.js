@@ -4,8 +4,8 @@ const galleryDiv = document.querySelector(".gallery");
 
 const gallery = galleryItems
   .map(
-    (img) =>
-      `<a class="gallery__item" href="${img.original}"><img class="gallery__image" src="${img.preview}" data-source="${img.original}" alt="${img.description}"/></a>`
+    (item) =>
+      `<a class="gallery__item" href="${item.original}"><img class="gallery__image" src="${item.preview}" data-source="${item.original}" alt="${item.description}"/></a>`
   )
   .join("");
 
